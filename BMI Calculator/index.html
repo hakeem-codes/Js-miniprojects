@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        background-color: white;
+        padding: 40px 50px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .container h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    form p {
+        margin: 15px 0;
+        text-align: left;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+        font-weight: 500;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: white;
+        background-color: #28a745;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #218838;
+    }
+
+    .result {
+        margin-top: 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #333;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h2> BMI Calulator</h2>
+        <form>
+            <p><label>Height in cm: </label><input type="text" id="Height"></p>
+            <p><label> Weight in kg: </label><input type="text" id="Weight" ></p>
+            <button type="submit">Calculate</button>
+            <div class="result"></div>
+        </form>
+    </div>
+    <script src="projet.js"></script>
+</body>
+</html>
